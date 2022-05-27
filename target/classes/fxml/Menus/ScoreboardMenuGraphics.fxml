@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.Controller.ScoreboardMenuFXMLController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../../css/ScoreboardMenuStyle.css">
+    <center>
+        <VBox fx:id="menu" maxWidth="1240" maxHeight="650">
+            <HBox alignment="TOP_CENTER">
+                <Button fx:id="total" text="Total" onMouseClicked="#showTotalScore"/>
+                <Button fx:id="level1" text="Level 1" onMouseClicked="#showLevel1Score"/>
+                <Button fx:id="level2" text="Level 2" onMouseClicked="#showLevel2Score"/>
+                <Button fx:id="level3" text="Level 3" onMouseClicked="#showLevel3Score"/>
+                <Button fx:id="devilMode" text="Devil mode" onMouseClicked="#showDevilModeScore"/>
+            </HBox>
+            <Text text="Total" fx:id="levelText" id="levelText"/>
+            <VBox fx:id="scoreboard" alignment="CENTER"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back" onMouseClicked="#backToMainMenu" alignment="CENTER"/>
+    </bottom>
+
+</BorderPane>

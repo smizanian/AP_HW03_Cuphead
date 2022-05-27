@@ -1,0 +1,57 @@
+[
+  {
+    "username": "Guest",
+    "password": "123456",
+    "scoreLevel1": 0,
+    "scoreLevel2": 3313,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "__pics__Avatars__avatar3.png__",
+    "isGuest": true,
+    "minTime": 23
+  },
+  {
+    "username": "Yahya",
+    "password": "123456aA",
+    "scoreLevel1": 0,
+    "scoreLevel2": 2530,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "file__C__Users__smiza__Pictures__Chandra.jpg__",
+    "isGuest": false,
+    "minTime": 18
+  },
+  {
+    "username": "Sepehr",
+    "password": "123456aA",
+    "scoreLevel1": 0,
+    "scoreLevel2": 0,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "file__C__Users__smiza__Pictures__Chandra.jpg__",
+    "isGuest": false,
+    "minTime": 40
+  },
+  {
+    "username": "googooliMagooli",
+    "password": "1234",
+    "scoreLevel1": 0,
+    "scoreLevel2": 0,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "__pics__Avatars__avatar2.png__",
+    "isGuest": false,
+    "minTime": 11
+  },
+  {
+    "username": "Hasti",
+    "password": "1234567890",
+    "scoreLevel1": 0,
+    "scoreLevel2": 0,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "file__C__Users__smiza__Pictures__Chandra.jpg__",
+    "isGuest": false,
+    "minTime": 32
+  }
+]

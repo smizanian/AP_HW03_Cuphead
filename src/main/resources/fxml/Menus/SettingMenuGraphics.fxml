@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.Controller.SettingMenuFXMLController"
+            prefHeight="720" prefWidth="1280">
+
+    <center>
+        <VBox alignment="CENTER" maxWidth="400" maxHeight="200" spacing="10">
+            <HBox spacing="10">
+                <Button text="Level 1" fx:id="level1" onMouseClicked="#level1"/>
+                <Button text="Level 2" fx:id="level2" onMouseClicked="#level2"/>
+                <Button text="Level 3" fx:id="level3" onMouseClicked="#level3"/>
+                <Button text="Devil Mode" onMouseClicked="#DevilMode"/>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <Button text="Mute"/>
+                <Button text="Black and white"/>
+                <Button text="Mute" fx:id="mute" onMouseClicked="#muteMusic"/>
+            </HBox>
+            <Button text="Back" onMouseClicked="#backToMainMenu"/>
+        </VBox>
+    </center>
+
+</BorderPane>

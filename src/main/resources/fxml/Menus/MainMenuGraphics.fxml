@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.Controller.MainMenuFXMLController"
+            prefHeight="720" prefWidth="1280">
+    <center>
+        <VBox spacing="50" alignment="CENTER" maxWidth="350">
+            <Button fx:id="Setting" text="Setting" onMouseClicked="#goToSettingMenu"/>
+            <Button fx:id="ProfileMenu" text="Profile menu" onMouseClicked="#goToProfileMenu"/>
+            <Button fx:id="Scoreboard" text="Scoreboard" onMouseClicked="#goToScoreboardMenu"/>
+            <Button fx:id="NewGame" text="New Game" onMouseClicked="#newGame"/>
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.Controller.LoginMenuFXMLController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../../css/LoginMenuStyle.css">
+<center>
+    <VBox alignment="CENTER" maxWidth="350" spacing="10">
+        <Text text="Cuphead" id="cuphead"/>
+        <Text text="Sepehr Mizanian - 400109684" id="name"/>
+        <Label text="Username"/>
+        <TextField promptText="Enter your Username" fx:id="username" onKeyTyped="#setColorTransparent"/>
+        <Label text="Password"/>
+        <TextField promptText="Enter your Password" fx:id="password" onKeyTyped="#setColorTransparent"/>
+        <Button text="Login" fx:id="login" onMouseClicked="#LoginButton" disable="true"/>
+        <Button text="Register" fx:id="register" onMouseClicked="#RegisterButton" disable="true"/>
+        <Button text="Guest" fx:id="guest" styleClass="guestButton" onMouseClicked="#LoginWithGuestAccount"/>
+        <Button text="Exit" fx:id="exit" styleClass="exitButton" onMouseClicked="#Exit"/>
+        <Text text="" fx:id="error"/>
+    </VBox>
+</center>
+</BorderPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="View.Controller.ProfileMenuFXMLController"
+            prefHeight="720" prefWidth="1280" stylesheets="@../../css/ProfileMenuStyle.css">
+    <center>
+        <HBox spacing="40" maxWidth="1240" maxHeight="680">
+            <VBox fx:id="boxOfAvatar" spacing="10">
+
+            </VBox>
+            <Text fx:id="usernameText" id="usernameText"/>
+            <VBox fx:id="boxOfChangingUsernameAndPassword" spacing="10">
+                <Button fx:id="changeUsername" text="Change Username" onMouseClicked="#openUsernameTextField"/>
+                <HBox>
+                    <TextField fx:id="changeUsernameTextField" promptText="Enter your new username" onKeyTyped="#visibleOkUsername" visible="false"/>
+                    <Button fx:id="usernameOKButton" text="OK" onMouseClicked="#changeUsername" visible="false" disable="true"/>
+                </HBox>
+                <Text text="" fx:id="usernameError"/>
+                <Button fx:id="changePassword" text="Change Password" onMouseClicked="#openPasswordTextField"/>
+                <HBox>
+                    <TextField fx:id="changePasswordTextField" promptText="Enter your new password" onKeyTyped="#visibleOkPassword" visible="false"/>
+                    <Button fx:id="passwordOKButton" text="OK" onMouseClicked="#changePassword" visible="false" disable="true"/>
+                </HBox>
+            </VBox>
+            <VBox spacing="50">
+                <Button fx:id="loadAvatar" text="Load avatar" onMouseClicked="#loadAvatar"/>
+                <Button alignment="BOTTOM_RIGHT" text="Logout" onMouseClicked="#accountLogout"/>
+                <Button alignment="BOTTOM_RIGHT" text="Delete account" fx:id="deleteAccountButton" onMouseClicked="#deleteAccount"/>
+                <Button text="Back" onMouseClicked="#backToMainMenu"/>
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

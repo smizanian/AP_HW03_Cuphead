@@ -1,0 +1,9 @@
+#levelText{
+    -fx-font-size: 60;
+    -fx-font-weight: bold;
+}
+
+#score{
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}

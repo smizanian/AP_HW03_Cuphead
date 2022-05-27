@@ -1,0 +1,13 @@
+[
+  {
+    "username": "Guest",
+    "password": "123456",
+    "scoreLevel1": 0,
+    "scoreLevel2": 0,
+    "scoreLevel3": 0,
+    "scoreDevilMode": 0,
+    "avatarURL": "__pics__Avatars__avatar2.png__",
+    "isGuest": true,
+    "minTime": 2147483647
+  }
+]
